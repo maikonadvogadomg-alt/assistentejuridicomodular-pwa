@@ -1,0 +1,10 @@
+{
+  "_instrucao": "Adicione esses scripts no seu package.json existente",
+  "scripts": {
+    "build": "vite build",
+    "build:android": "npm run build && npx cap sync android",
+    "eas:apk": "eas build --platform android --profile preview --non-interactive",
+    "eas:dev": "eas build --platform android --profile development --non-interactive",
+    "eas:prod": "eas build --platform android --profile production --non-interactive"
+  }
+}
